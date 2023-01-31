@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="main">
+    <file>open-file.png</file>
+    <file>logo-mf-blanco-512.png</file>
+  </qresource>
+</RCC>
