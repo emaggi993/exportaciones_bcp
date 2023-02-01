@@ -58,7 +58,7 @@ def conect(database: str = None):
 	except (Exception, psycopg2.DatabaseError) as error:
 		print("Error to PostgreSQL", error)
 		return None
-def cursor_db(database: str = None):
+def cursor_db(database: str = None) :
 	try:
 		return conect(database).connect()
 	except:
