@@ -111,8 +111,8 @@ class eliminar_widget(object):
         self.ETDesde = QDateEdit(self.content_frame)
         self.ETDesde.setObjectName(u"ETDesde")
         self.ETDesde.setStyleSheet(u"background-color: rgb(255, 136, 0);")
-        self.ETDesde.setDateTime(QDateTime(QDate(2015, 1, 1), QTime(6, 0, 0)))
-        self.ETDesde.setMinimumDateTime(QDateTime(QDate(2015, 1, 1), QTime(6, 0, 0)))
+        self.ETDesde.setDateTime(QDateTime(QDate(2015, 1, 1), QTime(9, 0, 0)))
+        self.ETDesde.setMinimumDateTime(QDateTime(QDate(2015, 1, 1), QTime(9, 0, 0)))
         self.ETDesde.setCalendarPopup(True)
 
         self.gridLayout.addWidget(self.ETDesde, 0, 1, 1, 1)
@@ -120,8 +120,8 @@ class eliminar_widget(object):
         self.ETHasta = QDateEdit(self.content_frame)
         self.ETHasta.setObjectName(u"ETHasta")
         self.ETHasta.setStyleSheet(u"background-color: rgb(255, 136, 0);")
-        self.ETHasta.setDateTime(QDateTime(QDate(2015, 1, 1), QTime(6, 0, 0)))
-        self.ETHasta.setMinimumDateTime(QDateTime(QDate(2015, 1, 1), QTime(6, 0, 0)))
+        self.ETHasta.setDateTime(QDateTime(QDate(2015, 1, 1), QTime(9, 0, 0)))
+        self.ETHasta.setMinimumDateTime(QDateTime(QDate(2015, 1, 1), QTime(9, 0, 0)))
         self.ETHasta.setCurrentSection(QDateTimeEdit.MonthSection)
         self.ETHasta.setCalendarPopup(True)
 
@@ -220,7 +220,7 @@ class eliminar_widget(object):
 
     def retranslateUi(self, eliminar_widget):
         eliminar_widget.setWindowTitle(QCoreApplication.translate("eliminar_widget", u"Form", None))
-        self.title_label.setText(QCoreApplication.translate("eliminar_widget", u"Boletines - MF Econom\u00eda e Inversiones", None))
+        self.title_label.setText(QCoreApplication.translate("eliminar_widget", u"<html><head/><body><p>Exportaciones - MF Econom\u00eda e Inversiones</p></body></html>", None))
         self.minimize_button.setText(QCoreApplication.translate("eliminar_widget", u"...", None))
         self.restore_button.setText(QCoreApplication.translate("eliminar_widget", u"...", None))
         self.close_button.setText(QCoreApplication.translate("eliminar_widget", u"...", None))

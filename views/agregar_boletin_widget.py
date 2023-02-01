@@ -286,7 +286,7 @@ class AgregarBoletinWidget(object):
 
     def retranslateUi(self, agregar_boletin_widget):
         agregar_boletin_widget.setWindowTitle(QCoreApplication.translate("agregar_boletin_widget", u"Form", None))
-        self.title_label.setText(QCoreApplication.translate("agregar_boletin_widget", u"<html><head/><body><p>Boletines - MF Econom\u00eda e Inversiones</p></body></html>", None))
+        self.title_label.setText(QCoreApplication.translate("agregar_boletin_widget", u"<html><head/><body><p>Exportaciones - MF Econom\u00eda e Inversiones</p></body></html>", None))
         self.minimize_button.setText(QCoreApplication.translate("agregar_boletin_widget", u"...", None))
         self.restore_button.setText(QCoreApplication.translate("agregar_boletin_widget", u"...", None))
         self.close_button.setText(QCoreApplication.translate("agregar_boletin_widget", u"...", None))

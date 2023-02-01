@@ -96,7 +96,7 @@ color: rgb(255,255,255)</string>
             <item>
              <widget class="QLabel" name="title_label">
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Boletines - MF Economía e Inversiones&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Exportaciones - MF Economía e Inversiones&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>

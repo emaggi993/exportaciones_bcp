@@ -96,7 +96,7 @@ color: rgb(255,255,255)</string>
             <item>
              <widget class="QLabel" name="title_label">
               <property name="text">
-               <string>Boletines - MF Economía e Inversiones</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Exportaciones - MF Economía e Inversiones&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
@@ -235,7 +235,7 @@ color: rgb(255,255,255)</string>
                 </property>
                 <property name="dateTime">
                  <datetime>
-                  <hour>6</hour>
+                  <hour>9</hour>
                   <minute>0</minute>
                   <second>0</second>
                   <year>2015</year>
@@ -245,7 +245,7 @@ color: rgb(255,255,255)</string>
                 </property>
                 <property name="minimumDateTime">
                  <datetime>
-                  <hour>6</hour>
+                  <hour>9</hour>
                   <minute>0</minute>
                   <second>0</second>
                   <year>2015</year>
@@ -265,7 +265,7 @@ color: rgb(255,255,255)</string>
                 </property>
                 <property name="dateTime">
                  <datetime>
-                  <hour>6</hour>
+                  <hour>9</hour>
                   <minute>0</minute>
                   <second>0</second>
                   <year>2015</year>
@@ -275,7 +275,7 @@ color: rgb(255,255,255)</string>
                 </property>
                 <property name="minimumDateTime">
                  <datetime>
-                  <hour>6</hour>
+                  <hour>9</hour>
                   <minute>0</minute>
                   <second>0</second>
                   <year>2015</year>
