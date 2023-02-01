@@ -150,45 +150,57 @@ class config_widget(object):
 
         self.formLayout.setWidget(0, QFormLayout.LabelRole, self.label)
 
-        self.label_2 = QLabel(self.configuracion)
-        self.label_2.setObjectName(u"label_2")
-
-        self.formLayout.setWidget(1, QFormLayout.LabelRole, self.label_2)
-
-        self.label_3 = QLabel(self.configuracion)
-        self.label_3.setObjectName(u"label_3")
-
-        self.formLayout.setWidget(2, QFormLayout.LabelRole, self.label_3)
-
-        self.label_4 = QLabel(self.configuracion)
-        self.label_4.setObjectName(u"label_4")
-
-        self.formLayout.setWidget(3, QFormLayout.LabelRole, self.label_4)
-
         self.le_host = QLineEdit(self.configuracion)
         self.le_host.setObjectName(u"le_host")
         self.le_host.setStyleSheet(u"background-color: #fff")
 
         self.formLayout.setWidget(0, QFormLayout.FieldRole, self.le_host)
 
-        self.le_base = QLineEdit(self.configuracion)
-        self.le_base.setObjectName(u"le_base")
-        self.le_base.setStyleSheet(u"background-color: #fff\n"
+        self.label_2 = QLabel(self.configuracion)
+        self.label_2.setObjectName(u"label_2")
+
+        self.formLayout.setWidget(3, QFormLayout.LabelRole, self.label_2)
+
+        self.le_puerto = QLineEdit(self.configuracion)
+        self.le_puerto.setObjectName(u"le_puerto")
+        self.le_puerto.setStyleSheet(u"background-color: #fff\n"
 "")
 
-        self.formLayout.setWidget(1, QFormLayout.FieldRole, self.le_base)
+        self.formLayout.setWidget(3, QFormLayout.FieldRole, self.le_puerto)
+
+        self.label_3 = QLabel(self.configuracion)
+        self.label_3.setObjectName(u"label_3")
+
+        self.formLayout.setWidget(4, QFormLayout.LabelRole, self.label_3)
 
         self.le_user = QLineEdit(self.configuracion)
         self.le_user.setObjectName(u"le_user")
         self.le_user.setStyleSheet(u"background-color: #fff")
 
-        self.formLayout.setWidget(2, QFormLayout.FieldRole, self.le_user)
+        self.formLayout.setWidget(4, QFormLayout.FieldRole, self.le_user)
+
+        self.label_4 = QLabel(self.configuracion)
+        self.label_4.setObjectName(u"label_4")
+
+        self.formLayout.setWidget(5, QFormLayout.LabelRole, self.label_4)
 
         self.le_password = QLineEdit(self.configuracion)
         self.le_password.setObjectName(u"le_password")
         self.le_password.setStyleSheet(u"background-color: #fff")
 
-        self.formLayout.setWidget(3, QFormLayout.FieldRole, self.le_password)
+        self.formLayout.setWidget(5, QFormLayout.FieldRole, self.le_password)
+
+        self.label_8 = QLabel(self.configuracion)
+        self.label_8.setObjectName(u"label_8")
+
+        self.formLayout.setWidget(2, QFormLayout.LabelRole, self.label_8)
+
+        self.le_base = QLineEdit(self.configuracion)
+        self.le_base.setObjectName(u"le_base")
+        self.le_base.setStyleSheet(u"background-color: #fff\n"
+"")
+
+        self.formLayout.setWidget(2, QFormLayout.FieldRole, self.le_base)
 
 
         self.horizontalLayout_3.addLayout(self.formLayout)
@@ -297,9 +309,10 @@ class config_widget(object):
         self.label_5.setText(QCoreApplication.translate("config_widget", u"<html><head/><body><p align=\"center\"><span style=\" font-size:22pt;\">Base de datos</span></p></body></html>", None))
         self.label_7.setText("")
         self.label.setText(QCoreApplication.translate("config_widget", u"<html><head/><body><p>Host<span style=\" color:#ff0000;\">*</span><span style=\" color:#000000;\">:</span></p></body></html>", None))
-        self.label_2.setText(QCoreApplication.translate("config_widget", u"<html><head/><body><p>Base de datos<span style=\" color:#ff0000;\">*</span>:</p></body></html>", None))
+        self.label_2.setText(QCoreApplication.translate("config_widget", u"<html><head/><body><p><span style=\" color:#000000;\">Puerto</span><span style=\" color:#ff0000;\">*</span>:</p></body></html>", None))
         self.label_3.setText(QCoreApplication.translate("config_widget", u"<html><head/><body><p>Usuario<span style=\" color:#ff0000;\">*</span>:</p></body></html>", None))
         self.label_4.setText(QCoreApplication.translate("config_widget", u"<html><head/><body><p>Contrase\u00f1a<span style=\" color:#ff0000;\">*</span>:</p></body></html>", None))
+        self.label_8.setText(QCoreApplication.translate("config_widget", u"<html><head/><body><p>Base de datos<span style=\" color:#ff0000;\">*</span>:</p></body></html>", None))
         self.BtnGenerar.setText(QCoreApplication.translate("config_widget", u"Generar", None))
         self.btn_test.setText(QCoreApplication.translate("config_widget", u"Test", None))
         self.error_label.setText("")
