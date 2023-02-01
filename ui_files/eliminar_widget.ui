@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>agregar_boletin_widget</class>
- <widget class="QWidget" name="agregar_boletin_widget">
+ <class>eliminar_widget</class>
+ <widget class="QWidget" name="eliminar_widget">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -96,7 +96,7 @@ color: rgb(255,255,255)</string>
             <item>
              <widget class="QLabel" name="title_label">
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Boletines - MF Economía e Inversiones&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>Boletines - MF Economía e Inversiones</string>
               </property>
              </widget>
             </item>
@@ -227,184 +227,91 @@ color: rgb(255,255,255)</string>
            </property>
            <layout class="QVBoxLayout" name="verticalLayout_6">
             <item>
-             <widget class="QFrame" name="seleccion_archivo_frame">
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>100</height>
-               </size>
-              </property>
-              <property name="frameShape">
-               <enum>QFrame::StyledPanel</enum>
-              </property>
-              <property name="frameShadow">
-               <enum>QFrame::Raised</enum>
-              </property>
-              <layout class="QVBoxLayout" name="verticalLayout_3">
-               <item>
-                <layout class="QGridLayout" name="gridLayout">
-                 <item row="1" column="0">
-                  <widget class="QLabel" name="label">
-                   <property name="styleSheet">
-                    <string notr="true">color: #1c3c6c</string>
-                   </property>
-                   <property name="text">
-                    <string>Archivos</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="1">
-                  <widget class="QLineEdit" name="ETNombreArchivo">
-                   <property name="minimumSize">
-                    <size>
-                     <width>0</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                   <property name="maximumSize">
-                    <size>
-                     <width>16777215</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">background-color: rgb(255, 255, 255)</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="2">
-                  <widget class="QPushButton" name="BtnSeleccionarArchivo">
-                   <property name="minimumSize">
-                    <size>
-                     <width>120</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                   <property name="maximumSize">
-                    <size>
-                     <width>120</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">QPushButton{
-background-color: rgb(204, 170, 28);
-color: white;
-}
-QPushButton::hover{
-	background-color: #ffc13b;
-}</string>
-                   </property>
-                   <property name="text">
-                    <string>Seleccionar</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="2" column="1">
-                  <widget class="QComboBox" name="cb_separador">
-                   <property name="styleSheet">
-                    <string notr="true">background-color: #fff;</string>
-                   </property>
-                   <item>
-                    <property name="text">
-                     <string>Tabulación</string>
-                    </property>
-                   </item>
-                   <item>
-                    <property name="text">
-                     <string>Coma</string>
-                    </property>
-                   </item>
-                   <item>
-                    <property name="text">
-                     <string>Punto y coma</string>
-                    </property>
-                   </item>
-                  </widget>
-                 </item>
-                 <item row="2" column="0">
-                  <widget class="QLabel" name="label_4">
-                   <property name="text">
-                    <string>Separador</string>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </item>
-              </layout>
-             </widget>
-            </item>
-            <item>
-             <widget class="QFrame" name="tipo_obs_frame">
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>100</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>100</height>
-               </size>
-              </property>
-              <property name="frameShape">
-               <enum>QFrame::StyledPanel</enum>
-              </property>
-              <property name="frameShadow">
-               <enum>QFrame::Raised</enum>
-              </property>
-              <layout class="QHBoxLayout" name="horizontalLayout_3">
-               <item>
-                <layout class="QVBoxLayout" name="verticalLayout_5">
-                 <item>
-                  <widget class="QLabel" name="label_2">
-                   <property name="styleSheet">
-                    <string notr="true">color: #1c3c6c</string>
-                   </property>
-                   <property name="text">
-                    <string>Fecha del archivo:</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <layout class="QHBoxLayout" name="horizontalLayout_2">
-                   <item>
-                    <widget class="QLabel" name="LArchivo">
-                     <property name="styleSheet">
-                      <string notr="true">color: rgb(1, 95, 4)</string>
-                     </property>
-                     <property name="text">
-                      <string/>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QLabel" name="LCheck">
-                     <property name="text">
-                      <string/>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </item>
-                 <item>
-                  <widget class="QLabel" name="label_3">
-                   <property name="styleSheet">
-                    <string notr="true">color: #1c3c6c</string>
-                   </property>
-                   <property name="text">
-                    <string>Obs: Al seleccionar el archivo debe aparecer en esta parte la fecha del archivo</string>
-                   </property>
-                   <property name="wordWrap">
-                    <bool>true</bool>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </item>
-              </layout>
-             </widget>
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="0" column="1">
+               <widget class="QDateEdit" name="ETDesde">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 136, 0);</string>
+                </property>
+                <property name="dateTime">
+                 <datetime>
+                  <hour>6</hour>
+                  <minute>0</minute>
+                  <second>0</second>
+                  <year>2015</year>
+                  <month>1</month>
+                  <day>1</day>
+                 </datetime>
+                </property>
+                <property name="minimumDateTime">
+                 <datetime>
+                  <hour>6</hour>
+                  <minute>0</minute>
+                  <second>0</second>
+                  <year>2015</year>
+                  <month>1</month>
+                  <day>1</day>
+                 </datetime>
+                </property>
+                <property name="calendarPopup">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QDateEdit" name="ETHasta">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 136, 0);</string>
+                </property>
+                <property name="dateTime">
+                 <datetime>
+                  <hour>6</hour>
+                  <minute>0</minute>
+                  <second>0</second>
+                  <year>2015</year>
+                  <month>1</month>
+                  <day>1</day>
+                 </datetime>
+                </property>
+                <property name="minimumDateTime">
+                 <datetime>
+                  <hour>6</hour>
+                  <minute>0</minute>
+                  <second>0</second>
+                  <year>2015</year>
+                  <month>1</month>
+                  <day>1</day>
+                 </datetime>
+                </property>
+                <property name="currentSection">
+                 <enum>QDateTimeEdit::MonthSection</enum>
+                </property>
+                <property name="calendarPopup">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label">
+                <property name="styleSheet">
+                 <string notr="true">color: #1c3c6c</string>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Desde&lt;span style=&quot; color:#ff0000;&quot;&gt;*&lt;/span&gt;:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_2">
+                <property name="styleSheet">
+                 <string notr="true">color: #1c3c6c</string>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Hasta&lt;span style=&quot; color:#ff0000;&quot;&gt;*&lt;/span&gt;:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
             </item>
             <item>
              <widget class="QFrame" name="buttons_frame">
@@ -437,15 +344,15 @@ QPushButton::hover{
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QPushButton{
-background-color: rgb(204, 170, 28);
+background-color: rgb(255, 5, 5);
 color: white;
 }
 QPushButton::hover{
-	background-color: #ffc13b;
+	background-color: rgb(255, 121, 12);
 }</string>
                  </property>
                  <property name="text">
-                  <string>Generar</string>
+                  <string>Eliminar</string>
                  </property>
                 </widget>
                </item>
@@ -495,7 +402,7 @@ QPushButton::hover{
                </size>
               </property>
               <property name="text">
-               <string/>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
@@ -527,7 +434,7 @@ QPushButton::hover{
                </size>
               </property>
               <property name="styleSheet">
-               <string notr="true">color: #000;
+               <string notr="true">color: #FFFFFF;
 text-align: center;</string>
               </property>
               <property name="value">
