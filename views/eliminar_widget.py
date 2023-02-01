@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'agregar_boletin_widget.ui'
+## Form generated from reading UI file 'eliminar_widget.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.2
 ##
@@ -15,22 +15,22 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QComboBox, QFrame, QGridLayout,
-    QHBoxLayout, QLabel, QLineEdit, QProgressBar,
+from PySide6.QtWidgets import (QApplication, QDateEdit, QDateTimeEdit, QFrame,
+    QGridLayout, QHBoxLayout, QLabel, QProgressBar,
     QPushButton, QSizePolicy, QSpacerItem, QToolButton,
     QVBoxLayout, QWidget)
 
-class AgregarBoletinWidget(object):
-    def setupUi(self, agregar_boletin_widget):
-        if not agregar_boletin_widget.objectName():
-            agregar_boletin_widget.setObjectName(u"agregar_boletin_widget")
-        agregar_boletin_widget.resize(769, 488)
-        agregar_boletin_widget.setStyleSheet(u"border-radius: 5px;")
-        self.verticalLayout = QVBoxLayout(agregar_boletin_widget)
+class eliminar_widget(object):
+    def setupUi(self, eliminar_widget):
+        if not eliminar_widget.objectName():
+            eliminar_widget.setObjectName(u"eliminar_widget")
+        eliminar_widget.resize(769, 488)
+        eliminar_widget.setStyleSheet(u"border-radius: 5px;")
+        self.verticalLayout = QVBoxLayout(eliminar_widget)
         self.verticalLayout.setSpacing(0)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
-        self.central_frame = QFrame(agregar_boletin_widget)
+        self.central_frame = QFrame(eliminar_widget)
         self.central_frame.setObjectName(u"central_frame")
         self.central_frame.setFrameShape(QFrame.StyledPanel)
         self.central_frame.setFrameShadow(QFrame.Raised)
@@ -106,107 +106,41 @@ class AgregarBoletinWidget(object):
         self.content_frame.setFrameShadow(QFrame.Raised)
         self.verticalLayout_6 = QVBoxLayout(self.content_frame)
         self.verticalLayout_6.setObjectName(u"verticalLayout_6")
-        self.seleccion_archivo_frame = QFrame(self.content_frame)
-        self.seleccion_archivo_frame.setObjectName(u"seleccion_archivo_frame")
-        self.seleccion_archivo_frame.setMaximumSize(QSize(16777215, 100))
-        self.seleccion_archivo_frame.setFrameShape(QFrame.StyledPanel)
-        self.seleccion_archivo_frame.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_3 = QVBoxLayout(self.seleccion_archivo_frame)
-        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.gridLayout = QGridLayout()
         self.gridLayout.setObjectName(u"gridLayout")
-        self.label = QLabel(self.seleccion_archivo_frame)
+        self.ETDesde = QDateEdit(self.content_frame)
+        self.ETDesde.setObjectName(u"ETDesde")
+        self.ETDesde.setStyleSheet(u"background-color: rgb(255, 136, 0);")
+        self.ETDesde.setDateTime(QDateTime(QDate(2015, 1, 1), QTime(6, 0, 0)))
+        self.ETDesde.setMinimumDateTime(QDateTime(QDate(2015, 1, 1), QTime(6, 0, 0)))
+        self.ETDesde.setCalendarPopup(True)
+
+        self.gridLayout.addWidget(self.ETDesde, 0, 1, 1, 1)
+
+        self.ETHasta = QDateEdit(self.content_frame)
+        self.ETHasta.setObjectName(u"ETHasta")
+        self.ETHasta.setStyleSheet(u"background-color: rgb(255, 136, 0);")
+        self.ETHasta.setDateTime(QDateTime(QDate(2015, 1, 1), QTime(6, 0, 0)))
+        self.ETHasta.setMinimumDateTime(QDateTime(QDate(2015, 1, 1), QTime(6, 0, 0)))
+        self.ETHasta.setCurrentSection(QDateTimeEdit.MonthSection)
+        self.ETHasta.setCalendarPopup(True)
+
+        self.gridLayout.addWidget(self.ETHasta, 1, 1, 1, 1)
+
+        self.label = QLabel(self.content_frame)
         self.label.setObjectName(u"label")
         self.label.setStyleSheet(u"color: #1c3c6c")
 
-        self.gridLayout.addWidget(self.label, 1, 0, 1, 1)
+        self.gridLayout.addWidget(self.label, 0, 0, 1, 1)
 
-        self.ETNombreArchivo = QLineEdit(self.seleccion_archivo_frame)
-        self.ETNombreArchivo.setObjectName(u"ETNombreArchivo")
-        self.ETNombreArchivo.setMinimumSize(QSize(0, 20))
-        self.ETNombreArchivo.setMaximumSize(QSize(16777215, 20))
-        self.ETNombreArchivo.setStyleSheet(u"background-color: rgb(255, 255, 255)")
-
-        self.gridLayout.addWidget(self.ETNombreArchivo, 1, 1, 1, 1)
-
-        self.BtnSeleccionarArchivo = QPushButton(self.seleccion_archivo_frame)
-        self.BtnSeleccionarArchivo.setObjectName(u"BtnSeleccionarArchivo")
-        self.BtnSeleccionarArchivo.setMinimumSize(QSize(120, 20))
-        self.BtnSeleccionarArchivo.setMaximumSize(QSize(120, 20))
-        self.BtnSeleccionarArchivo.setStyleSheet(u"QPushButton{\n"
-"background-color: rgb(204, 170, 28);\n"
-"color: white;\n"
-"}\n"
-"QPushButton::hover{\n"
-"	background-color: #ffc13b;\n"
-"}")
-
-        self.gridLayout.addWidget(self.BtnSeleccionarArchivo, 1, 2, 1, 1)
-
-        self.cb_separador = QComboBox(self.seleccion_archivo_frame)
-        self.cb_separador.addItem("")
-        self.cb_separador.addItem("")
-        self.cb_separador.addItem("")
-        self.cb_separador.setObjectName(u"cb_separador")
-        self.cb_separador.setStyleSheet(u"background-color: #fff;")
-
-        self.gridLayout.addWidget(self.cb_separador, 2, 1, 1, 1)
-
-        self.label_4 = QLabel(self.seleccion_archivo_frame)
-        self.label_4.setObjectName(u"label_4")
-
-        self.gridLayout.addWidget(self.label_4, 2, 0, 1, 1)
-
-
-        self.verticalLayout_3.addLayout(self.gridLayout)
-
-
-        self.verticalLayout_6.addWidget(self.seleccion_archivo_frame)
-
-        self.tipo_obs_frame = QFrame(self.content_frame)
-        self.tipo_obs_frame.setObjectName(u"tipo_obs_frame")
-        self.tipo_obs_frame.setMinimumSize(QSize(0, 100))
-        self.tipo_obs_frame.setMaximumSize(QSize(16777215, 100))
-        self.tipo_obs_frame.setFrameShape(QFrame.StyledPanel)
-        self.tipo_obs_frame.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_3 = QHBoxLayout(self.tipo_obs_frame)
-        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
-        self.verticalLayout_5 = QVBoxLayout()
-        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
-        self.label_2 = QLabel(self.tipo_obs_frame)
+        self.label_2 = QLabel(self.content_frame)
         self.label_2.setObjectName(u"label_2")
         self.label_2.setStyleSheet(u"color: #1c3c6c")
 
-        self.verticalLayout_5.addWidget(self.label_2)
-
-        self.horizontalLayout_2 = QHBoxLayout()
-        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
-        self.LArchivo = QLabel(self.tipo_obs_frame)
-        self.LArchivo.setObjectName(u"LArchivo")
-        self.LArchivo.setStyleSheet(u"color: rgb(1, 95, 4)")
-
-        self.horizontalLayout_2.addWidget(self.LArchivo)
-
-        self.LCheck = QLabel(self.tipo_obs_frame)
-        self.LCheck.setObjectName(u"LCheck")
-
-        self.horizontalLayout_2.addWidget(self.LCheck)
+        self.gridLayout.addWidget(self.label_2, 1, 0, 1, 1)
 
 
-        self.verticalLayout_5.addLayout(self.horizontalLayout_2)
-
-        self.label_3 = QLabel(self.tipo_obs_frame)
-        self.label_3.setObjectName(u"label_3")
-        self.label_3.setStyleSheet(u"color: #1c3c6c")
-        self.label_3.setWordWrap(True)
-
-        self.verticalLayout_5.addWidget(self.label_3)
-
-
-        self.horizontalLayout_3.addLayout(self.verticalLayout_5)
-
-
-        self.verticalLayout_6.addWidget(self.tipo_obs_frame)
+        self.verticalLayout_6.addLayout(self.gridLayout)
 
         self.buttons_frame = QFrame(self.content_frame)
         self.buttons_frame.setObjectName(u"buttons_frame")
@@ -220,11 +154,11 @@ class AgregarBoletinWidget(object):
         self.BtnGenerar.setMinimumSize(QSize(0, 30))
         self.BtnGenerar.setMaximumSize(QSize(16777215, 30))
         self.BtnGenerar.setStyleSheet(u"QPushButton{\n"
-"background-color: rgb(204, 170, 28);\n"
+"background-color: rgb(255, 5, 5);\n"
 "color: white;\n"
 "}\n"
 "QPushButton::hover{\n"
-"	background-color: #ffc13b;\n"
+"	background-color: rgb(255, 121, 12);\n"
 "}")
 
         self.horizontalLayout_4.addWidget(self.BtnGenerar)
@@ -263,7 +197,7 @@ class AgregarBoletinWidget(object):
         self.PBEstado.setObjectName(u"PBEstado")
         self.PBEstado.setMinimumSize(QSize(100, 0))
         self.PBEstado.setMaximumSize(QSize(100, 16777215))
-        self.PBEstado.setStyleSheet(u"color: #000;\n"
+        self.PBEstado.setStyleSheet(u"color: #FFFFFF;\n"
 "text-align: center;")
         self.PBEstado.setValue(0)
 
@@ -279,31 +213,22 @@ class AgregarBoletinWidget(object):
         self.verticalLayout.addWidget(self.central_frame)
 
 
-        self.retranslateUi(agregar_boletin_widget)
+        self.retranslateUi(eliminar_widget)
 
-        QMetaObject.connectSlotsByName(agregar_boletin_widget)
+        QMetaObject.connectSlotsByName(eliminar_widget)
     # setupUi
 
-    def retranslateUi(self, agregar_boletin_widget):
-        agregar_boletin_widget.setWindowTitle(QCoreApplication.translate("agregar_boletin_widget", u"Form", None))
-        self.title_label.setText(QCoreApplication.translate("agregar_boletin_widget", u"<html><head/><body><p>Boletines - MF Econom\u00eda e Inversiones</p></body></html>", None))
-        self.minimize_button.setText(QCoreApplication.translate("agregar_boletin_widget", u"...", None))
-        self.restore_button.setText(QCoreApplication.translate("agregar_boletin_widget", u"...", None))
-        self.close_button.setText(QCoreApplication.translate("agregar_boletin_widget", u"...", None))
-        self.maximize_button.setText(QCoreApplication.translate("agregar_boletin_widget", u"...", None))
-        self.label.setText(QCoreApplication.translate("agregar_boletin_widget", u"Archivos", None))
-        self.BtnSeleccionarArchivo.setText(QCoreApplication.translate("agregar_boletin_widget", u"Seleccionar", None))
-        self.cb_separador.setItemText(0, QCoreApplication.translate("agregar_boletin_widget", u"Tabulaci\u00f3n", None))
-        self.cb_separador.setItemText(1, QCoreApplication.translate("agregar_boletin_widget", u"Coma", None))
-        self.cb_separador.setItemText(2, QCoreApplication.translate("agregar_boletin_widget", u"Punto y coma", None))
-
-        self.label_4.setText(QCoreApplication.translate("agregar_boletin_widget", u"Separador", None))
-        self.label_2.setText(QCoreApplication.translate("agregar_boletin_widget", u"Fecha del archivo:", None))
-        self.LArchivo.setText("")
-        self.LCheck.setText("")
-        self.label_3.setText(QCoreApplication.translate("agregar_boletin_widget", u"Obs: Al seleccionar el archivo debe aparecer en esta parte la fecha del archivo", None))
-        self.BtnGenerar.setText(QCoreApplication.translate("agregar_boletin_widget", u"Generar", None))
+    def retranslateUi(self, eliminar_widget):
+        eliminar_widget.setWindowTitle(QCoreApplication.translate("eliminar_widget", u"Form", None))
+        self.title_label.setText(QCoreApplication.translate("eliminar_widget", u"Boletines - MF Econom\u00eda e Inversiones", None))
+        self.minimize_button.setText(QCoreApplication.translate("eliminar_widget", u"...", None))
+        self.restore_button.setText(QCoreApplication.translate("eliminar_widget", u"...", None))
+        self.close_button.setText(QCoreApplication.translate("eliminar_widget", u"...", None))
+        self.maximize_button.setText(QCoreApplication.translate("eliminar_widget", u"...", None))
+        self.label.setText(QCoreApplication.translate("eliminar_widget", u"<html><head/><body><p>Desde<span style=\" color:#ff0000;\">*</span>:</p></body></html>", None))
+        self.label_2.setText(QCoreApplication.translate("eliminar_widget", u"<html><head/><body><p>Hasta<span style=\" color:#ff0000;\">*</span>:</p></body></html>", None))
+        self.BtnGenerar.setText(QCoreApplication.translate("eliminar_widget", u"Eliminar", None))
         self.error_label.setText("")
-        self.label_info.setText("")
+        self.label_info.setText(QCoreApplication.translate("eliminar_widget", u"<html><head/><body><p><br/></p></body></html>", None))
     # retranslateUi
 
